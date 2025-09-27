@@ -126,7 +126,7 @@
 /* ========== GALLERY SECTION ========== */
 .gallery-section {
   padding: 80px 20px;
-  background: #1e1e2e;
+  background: linear-gradient(to bottom right, #000000, #111827); /* Changed to match Gallery bg */
 }
 
 .section-header {

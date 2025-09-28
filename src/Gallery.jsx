@@ -1,24 +1,28 @@
 import './Gallery.css';
 import { useNavigate } from 'react-router-dom';
+import MLN_1 from './assets/mln_1.jpg'
+import MLN_2 from './assets/mln_2.jpg'
+import MLN_3 from './assets/mln_3.jpg'
+import MLN_4 from './assets/mln_4.jpg';
 
 const Gallery = () => {
   const navigate = useNavigate();
   const artMovements = [
     {
       name: 'Art',
-      image: './asset/mln_1.jpg',
+      image: MLN_1,
     },
     {
       name: 'Art',
-      image: './asset/mln_2.jpg',
+      image: MLN_2,
     },
     {
       name: 'Art',
-      image: './asset/mln_3.jpg',
+      image: MLN_3,
     },
     {
-      name: 'Art', 
-      image: './asset/mln_4.jpg',
+      name: 'Art',
+      image: MLN_4,
     },
   ];
 

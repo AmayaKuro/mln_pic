@@ -1,14 +1,9 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ArtDetailPage from './Detail';
 import HomePage from './HomePage';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
       <Routes>
@@ -16,6 +11,8 @@ function App() {
           path="/"
           element={<HomePage />}
         />
+        <Route path="/detail/:blob" element={<ArtDetailPage />} />
+        {/* Fallback route for old /detail links without ID */}
         <Route path="/detail" element={<ArtDetailPage />} />
       </Routes>
     </Router>

@@ -75,18 +75,43 @@
   color: #fff;
   padding: 12px;
   text-align: center;
-  font-weight: 500;
-  font-size: 14px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   transform: translateY(100%);
   transition: all 0.3s ease;
 }
 
+.artwork-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.artwork-info h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.artwork-info p {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.artwork-info span {
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.7;
+}
+
 .card:hover .overlay {
   transform: translateY(0);
-  background: rgba(0, 0, 0, 0.7); /* Add black background on hover */
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.8); /* Add black background on hover */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 /* Add animation keyframes */

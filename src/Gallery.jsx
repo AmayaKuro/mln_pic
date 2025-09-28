@@ -1,33 +1,13 @@
 import './Gallery.css';
 import { useNavigate } from 'react-router-dom';
-import MLN_1 from './assets/mln_1.jpg'
-import MLN_2 from './assets/mln_2.jpg'
-import MLN_3 from './assets/mln_3.jpg'
-import MLN_4 from './assets/mln_4.jpg';
+import { getAllArtworks } from './artworks';
 
 const Gallery = () => {
   const navigate = useNavigate();
-  const artMovements = [
-    {
-      name: 'Art',
-      image: MLN_1,
-    },
-    {
-      name: 'Art',
-      image: MLN_2,
-    },
-    {
-      name: 'Art',
-      image: MLN_3,
-    },
-    {
-      name: 'Art',
-      image: MLN_4,
-    },
-  ];
+  const artworks = getAllArtworks();
 
-  const handleCardClick = (details) => {
-    navigate('/detail', { state: { artwork: details } });
+  const handleCardClick = (artworkId) => {
+    navigate(`/detail/${artworkId}`);
   };
 
   return (
@@ -40,17 +20,23 @@ const Gallery = () => {
       </div>
 
       <div className="grid">
-        {artMovements.map((movement, index) => (
+        {artworks.map((artwork, index) => (
           <div 
-            key={index} 
+            key={artwork.id} 
             className="card" 
-            onClick={() => handleCardClick(movement.details)}
+            onClick={() => handleCardClick(artwork.blob)}
           >
             <div 
               className="image" 
-              style={{ backgroundImage: `url(${movement.image})` }}
+              style={{ backgroundImage: `url(${artwork.image})` }}
             >
-              <div className="overlay">{movement.name}</div>
+              <div className="overlay">
+                <div className="artwork-info">
+                  <h3>{artwork.title}</h3>
+                  <p>{artwork.artist}</p>
+                  <span>{artwork.year}</span>
+                </div>
+              </div>
             </div>
           </div>
         ))}

@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './HomePage.css';
 import Gallery from './Gallery';
 
 const HomePage = () => {
   const [showGallery, setShowGallery] = useState(true); // Hiển thị gallery mặc định
-
+const navigate = useNavigate();
+const handleIntroClick = () => {
+    navigate('/introduction'); // Navigate to introduction route
+  };
   return (
     <div className="homepage">
       {/* Hero Section với background từ CSS */}
@@ -18,10 +22,7 @@ const HomePage = () => {
             <div className="hero-buttons">
               <button 
                 className="btn-primary"
-                onClick={() => {
-                  document.querySelector('.info-section')
-                          ?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                onClick={handleIntroClick} // Changed onClick handler
               >
                 Giới thiệu
               </button>

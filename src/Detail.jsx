@@ -2,7 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import { ArrowLeft, ZoomIn } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getArtworkById, getArtworkByBlob } from './artworks';
+import Comments from './Comments';
 import './Detail.css'; // Assuming you have some custom styles
+import './Comments.css'; // Comments component styles
+import './cleanupDemo'; // Clean up demo data for Firebase
 
 const ArtDetailPage = () => {
   const { blob } = useParams();
@@ -188,6 +191,15 @@ const ArtDetailPage = () => {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Real-time Comments Section */}
+              <div className={`transform transition-all duration-1200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                } delay-1300`}>
+                <Comments 
+                  artworkId={artwork.blob} 
+                  artworkTitle={artwork.title} 
+                />
               </div>
             </div>
           </div>

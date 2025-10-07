@@ -1,111 +1,81 @@
-import MLN_1 from './assets/mln_1.jpg'
-import MLN_2 from './assets/mln_2.jpg'
-import MLN_3 from './assets/mln_3.jpg'
-import MLN_4 from './assets/mln_4.jpg'
+import Camus_1 from './assets/camus.jpg'
+import Sartre_1 from './assets/sartre.jpg'
+import Kierkegaard_1 from './assets/kierkegaard.jpg'
+import Nietzsche_1 from './assets/nietzsche.jpg'
 
-// Artwork data for the gallery
+// Artwork data for the gallery (existentialism collection)
 export const artworks = [
   {
     id: 1,
-    blob: "chromatic_resonance",
-    title: "Chromatic Resonance",
-    artist: "Maria Rodriguez",
-    year: 2023,
-    medium: "Acrylic on canvas",
+    blob: "camus_absurd",
+    title: "Sự phi lý",
+    artist: "Dựa theo Albert Camus",
+    year: 2024,
+    medium: "Sơn dầu + AI",
     dimensions: "120×90 cm",
-    location: "Contemporary Art Museum",
-    category: "Contemporary Art",
-    image: MLN_1,
+    location: "Triển lãm Triết học & Nghệ thuật",
+    category: "Triết học Hiện sinh",
+    image: Camus_1,
     description: {
-      overview: "\"Chromatic Resonance\" explores the dynamic interplay between color, emotion, and human perception. The artist employs bold, sweeping brushstrokes to create a sense of movement and energy that seems to pulse with life.",
-      technique: "The composition draws viewers into a dialogue between warm and cool tones, representing the eternal dance between opposing forces in nature and human experience. Each layer of paint tells a story of spontaneity and deliberate choice.",
-      significance: "Rodriguez's technique combines traditional expressionist methods with contemporary color theory, creating a work that bridges historical artistic movements with modern sensibilities. The result is a piece that speaks to both the intellect and the emotions."
+      overview: "Con người luôn tìm kiếm ý nghĩa, trong khi thế giới im lặng. Tác phẩm gợi vòng xoáy hỗn loạn của thời gian và sự phi lý.",
+      technique: "Đồng hồ vỡ, xoáy tròn màu cam – xanh – đen, nhân vật đứng thẳng đối diện sự phi lý."
     },
-    techniques: [
-      "Abstract Expressionism",
-      "Heavy Impasto Technique",
-      "Mixed Media Elements"
-    ]
+    meaning: "Bức tranh thể hiện con người đối diện trực tiếp với sự phi lý của cuộc sống – mắc kẹt trong vòng xoáy thời gian và vô nghĩa, nhưng vẫn đứng vững, sống trọn vẹn trong nó. Đó là tinh thần Camus: chấp nhận phi lý để tìm tự do và hạnh phúc trong chính nó."
   },
   {
     id: 2,
-    blob: "ethereal_whispers",
-    title: "Ethereal Whispers",
-    artist: "James Chen",
+    blob: "sartre_freedom",
+    title: "Tự do & Trách nhiệm",
+    artist: "Dựa theo Jean-Paul Sartre",
     year: 2024,
-    medium: "Oil on canvas",
-    dimensions: "100×150 cm",
-    location: "Modern Art Gallery",
-    category: "Abstract Art",
-    image: MLN_2,
+    medium: "Sơn dầu + AI",
+    dimensions: "100×140 cm",
+    location: "Triển lãm Triết học & Nghệ thuật",
+    category: "Triết học Hiện sinh",
+    image: Sartre_1,
     description: {
-      overview: "\"Ethereal Whispers\" captures the fleeting moments between dreams and reality. Chen's masterful use of translucent layers creates depth that seems to shift with the viewer's perspective.",
-      technique: "The artist employs a unique glazing technique that allows light to penetrate multiple layers of paint, creating an almost luminous quality that changes throughout the day.",
-      significance: "This piece represents Chen's evolution from traditional portraiture to abstract expressionism, marking a pivotal moment in his artistic journey."
+      overview: "Con người bị kết án phải tự do – không có bản chất định sẵn, phải tự định nghĩa mình bằng hành động.",
+      technique: "Hành lang vô số cánh cửa, mỗi cửa mở ra khoảng trống mơ hồ. Nhân vật nhỏ bé, đơn độc giữa lựa chọn."
     },
-    techniques: [
-      "Glazing Technique",
-      "Layered Composition",
-      "Light Manipulation"
-    ]
+    meaning: "Bức tranh khắc họa con người cô độc giữa vô số lựa chọn – biểu tượng cho tự do tuyệt đối và trách nhiệm không thể trốn tránh. Mỗi lựa chọn định hình bản chất ta, gợi người xem tự hỏi: “Mình sẽ chọn cánh cửa nào?”"
   },
   {
     id: 3,
-    blob: "urban_symphony",
-    title: "Urban Symphony",
-    artist: "Elena Vasquez",
-    year: 2023,
-    medium: "Mixed media on canvas",
-    dimensions: "130×100 cm",
-    location: "City Art Center",
-    category: "Urban Art",
-    image: MLN_3,
+    blob: "kierkegaard_faith",
+    title: "Lo âu & Niềm tin",
+    artist: "Dựa theo Søren Kierkegaard",
+    year: 2024,
+    medium: "Sơn dầu + AI",
+    dimensions: "110×100 cm",
+    location: "Triển lãm Triết học & Nghệ thuật",
+    category: "Triết học Hiện sinh",
+    image: Kierkegaard_1,
     description: {
-      overview: "\"Urban Symphony\" is a vibrant celebration of city life, capturing the rhythm and energy of metropolitan existence through bold colors and dynamic forms.",
-      technique: "Vasquez incorporates found materials from urban environments, creating texture that tells the story of the city itself. The composition flows like music, with each element contributing to the overall harmony.",
-      significance: "This work challenges traditional boundaries between street art and gallery art, bringing the voice of the city into the refined space of the museum."
+      overview: "Lo âu hiện sinh là khi con người đối diện vực thẳm của sự vô hạn. Chỉ qua bước nhảy đức tin mới vượt qua được lo âu.",
+      technique: "Nhân vật quỳ gối bên mép vực, bầu trời đêm u tối với ánh trăng mờ và sao thưa."
     },
-    techniques: [
-      "Mixed Media Collage",
-      "Urban Material Integration",
-      "Rhythmic Composition"
-    ]
+    meaning: "Bức tranh tái hiện khoảnh khắc con người đối diện vực thẳm của bất định. Giữa lo âu và sợ hãi, chỉ đức tin mới giúp ta vượt qua và tìm thấy ý nghĩa sống – tinh thần “bước nhảy đức tin” của Kierkegaard."
   },
   {
     id: 4,
-    blob: "cosmic_dance",
-    title: "Cosmic Dance",
-    artist: "David Kumar",
+    blob: "nietzsche_overman",
+    title: "Siêu nhân",
+    artist: "Dựa theo Friedrich Nietzsche",
     year: 2024,
-    medium: "Digital art on canvas",
-    dimensions: "110×80 cm",
-    location: "Future Arts Museum",
-    category: "Digital Art",
-    image: MLN_4,
+    medium: "Sơn dầu + AI",
+    dimensions: "130×90 cm",
+    location: "Triển lãm Triết học & Nghệ thuật",
+    category: "Triết học Hiện sinh",
+    image: Nietzsche_1,
     description: {
-      overview: "\"Cosmic Dance\" explores the intersection of technology and traditional artistic expression. Kumar uses digital tools to create patterns that echo both cosmic phenomena and ancient artistic traditions.",
-      technique: "The piece is created through a combination of algorithmic generation and manual refinement, resulting in patterns that feel both calculated and organic.",
-      significance: "This work represents the future of art-making, where technology serves as both tool and collaborator in the creative process."
+      overview: "Con người phải phá bỏ giá trị cũ, xiềng xích ràng buộc, để tự kiến tạo giá trị mới bằng ý chí.",
+      technique: "Nhân vật trần trụi, phá vỡ xiềng xích, ánh sáng tỏa từ đầu, gam màu đỏ – xanh tương phản dữ dội."
     },
-    techniques: [
-      "Digital Art Techniques",
-      "Algorithmic Patterns",
-      "Technology Integration"
-    ]
+    meaning: "Bức tranh tượng trưng cho con người phá bỏ xiềng xích của những giá trị cũ, bùng nổ sức mạnh ý chí để tự kiến tạo bản thân – tinh thần “siêu nhân” đầy dũng cảm và sáng tạo của Nietzsche."
   }
 ];
 
-// Helper function to get artwork by ID
-export const getArtworkById = (id) => {
-  return artworks.find(artwork => artwork.id === parseInt(id));
-};
-
-export const getArtworkByBlob = (blob) => {
-  return artworks.find(artwork => artwork.blob === blob);
-};
-
-
-// Helper function to get all artworks
-export const getAllArtworks = () => {
-  return artworks;
-};
+// Helper functions
+export const getArtworkById = (id) => artworks.find(a => a.id === parseInt(id));
+export const getArtworkByBlob = (blob) => artworks.find(a => a.blob === blob);
+export const getAllArtworks = () => artworks;

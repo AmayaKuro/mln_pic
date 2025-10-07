@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react'; // Make sure to install lucide-react
+import { ArrowLeft, Compass } from 'lucide-react';
 import './Introduction.css';
 
 const Introduction = () => {
@@ -12,7 +12,6 @@ const Introduction = () => {
 
   return (
     <div className="introduction-modal">
-      {/* Back button styled like Detail page */}
       <button className="back-button" onClick={handleBack}>
         <ArrowLeft size={20} />
         <span>Back to Home</span>
@@ -21,29 +20,18 @@ const Introduction = () => {
       <div className="introduction-content">
         <div className="introduction-text-container">
           <h3>TRIỂN LÃM "CON NGƯỜI TRƯỚC LỰA CHỌN"</h3>
-          <img
-            src="./assets/lotus.jpg"
-            alt="Lotus Painting"
-            className="introduction-image"
-          />
+          <div className="symbol-container">
+  <Compass size={100} strokeWidth={1.2} className="introduction-symbol" />
+</div>
           <div className="introduction-text">
             <p>
-              Họa sĩ Nguyễn Như Đức, thế hệ 80 sinh ra ở Hà Nội và tiếp thu mĩ thuật
-              tại đó, rồi trên bước đường khám phá bản thân của mình, anh lưu lạc đến
-              Hội An những năm 2014, "Đức Bẹt", nghệ danh của anh cũng chọn
-              nơi đây làm quê hương thứ hai của mình và bắt đầu hành trình hội họa.
+              Trong hành trình tồn tại, mỗi con người đều đứng trước những ngã rẽ — giữa niềm tin và hoài nghi, giữa tự do và trách nhiệm, giữa lý trí và cảm xúc. Triển lãm “Con người trước lựa chọn” là lời mời bước vào thế giới nội tâm của con người hiện sinh: nơi không có câu trả lời tuyệt đối, chỉ còn sự giằng co giữa ý nghĩa và phi lý, giữa khát vọng sống và nỗi lo âu về chính sự tồn tại của mình.
             </p>
             <p>
-              Mười một năm sống ở Hội An, anh dành một nửa để vẽ sau những việc
-              đời thường khác nhau, đủ loại ngành nghề cốt yếu nuôi giấc mơ về những
-              tác phẩm ấp ủ sau này. Nguyễn Như Đức vì vốn mình mà chính gặp phải
-              Hội An, lập gia đình và từ đây, ý tưởng đời.
+              Thông qua những tác phẩm nghệ thuật trừu tượng kết hợp cùng triết học hiện sinh của Camus, Sartre, Kierkegaard, Nietzsche, triển lãm tái hiện những khoảnh khắc con người đối diện với chính bản thân – khi phải tự mình kiến tạo ý nghĩa cho cuộc đời trong một thế giới không sẵn câu trả lời.
             </p>
             <p>
-              Toàn bộ hệ thống chất liệu xuyên suốt của bộ tác phẩm hơn 30 bức tranh,
-              trong 5 năm Đức phát triển mà Đức cho là gần gũi, chạm được mỗi ngày
-              bình lặng ở Hội An như cuộc hương thứ hai của mình, đó là gia đình. Cuộc sống
-              mới là điểm tựa vững chắc cho anh.
+              Đây không chỉ là triển lãm nghệ thuật, mà còn là một cuộc đối thoại thầm lặng giữa người xem và chính mình – nơi mỗi bức tranh là một tấm gương phản chiếu những lựa chọn, những do dự, và cả niềm tin sâu kín nhất trong tâm hồn.
             </p>
           </div>
         </div>
